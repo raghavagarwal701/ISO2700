@@ -1,0 +1,147 @@
+
+
+body {
+  background-color: #211F1F;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-text {
+    color: rgb(251, 205, 50);
+    font-size: 3.5rem; /* Adjust as needed */
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: -1rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .heading1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(251, 205, 50);
+  }
+
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    border: 1px solid white;
+    font: 1.1rem sans-serif;
+    width: 35rem;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.35rem;
+    background-color: transparent;
+    color: white;
+    /* transition: border-color 0.5s ease; */
+  }
+
+  /* input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus {
+    border: 2px solid rgb(0, 0, 0);
+  } */
+  .input{
+    text-align: center;
+  }
+  input::placeholder {
+    font: 1.15rem sans-serif;
+    color: rgb(174, 174, 174);
+}
+  button[type="submit"] {
+    font-size: 1.7rem;
+    width: 8rem;
+    height: 3.5rem;
+    padding-bottom: 3rem;
+    margin-top: 0.5rem;
+    background-color:rgba(251, 205, 50);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0.4;
+}
+.empty::after {
+  content: "\00a0"; /* Non-breaking space character */
+  display: block;
+  background-color: #211F1F; /* Set the background color */
+  color: white; /* Set text color to white */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.checkboxText{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.checkbox {
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxLink {
+  color: rgba(251, 205, 50);
+  text-decoration: none;
+}
+
+
+
+
+@media (max-width: 1150px) {
+  /* Adjust styles for tablets and larger screens */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 20rem; /* Restore the original width on larger screens */
+  }
+  .heading1{
+    font-size: 2rem;
+  }
+  button[type="submit"] {
+    width: 8rem; /* Restore the original width on larger screens */
+  }
+
+  .logo-container {
+    margin-top: 0.5rem;
+    margin-left: 23%;
+  }
+  .logo-container img {
+    width: 8rem;
+    height: auto;
+    margin-left: 2rem;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+
+}
